@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;600&display=swap');
+
+@theme {
+  /* Colors */
+  --color-gold: #CFB56D;
+  --color-gold-light: #E6D28F;
+  --color-gold-dark: #B89C50;
+  
+  --color-dark-surface: #1A1A1A;
+  --color-dark-deep: #0F0F0F;
+
+  /* Fonts */
+  --font-serif: "Playfair Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Shadow */
+  --shadow-nav: 0 15px 40px -10px rgba(0, 0, 0, 0.9);
+}
+
+/* Background setup for testing */
+body {
+  background-color: #111;
+  color: white;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-down {
+  animation: fadeInDown 0.3s ease-out forwards;
+}
